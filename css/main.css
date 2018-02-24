@@ -1,0 +1,131 @@
+.fa-code {
+  color: blue;
+}
+
+.fa-handshake-o {
+  color: green;
+}
+
+.fa-music {
+  color: orange;
+}
+
+.fa-headphones {
+  color: red;
+}
+
+html {
+  background-color: #330033;
+  font-family: monospace;
+  margin: 20px;
+}
+
+body {
+  background-color: #fff;
+  border-radius: 25px;
+  color: #000;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+a {
+  background-color: #F0F0FF;
+  text-decoration: underline;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.left {
+  float: left;
+  margin-top: 5px; 
+}
+
+.right {
+  float: right;
+  margin-top: 5px; 
+  text-align: right;
+}
+
+#header::after,
+#content .section::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+#header,
+#content .section {
+  border-bottom: 1px solid #444;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+#header .fa {
+  margin-right: 5px;
+}
+
+#content .section:LAST-OF-TYPE {
+  border: 0;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+#header .left .fa {
+  text-align: center;
+  width: 40px;
+}
+
+#header .right {
+  font-size: 110%;
+}
+
+#header .right .fa {
+  text-align: center;
+  width: 50px;
+}
+
+.section_title .fa {
+  margin-top: 5px;
+  text-align: center;
+  padding: 2px 0 2px 0;
+  width: 30px;
+}
+
+.title {
+  background-color: #FFFFAA;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 100%;
+  font-style: italic;
+}
+
+.section_title div {
+  clear: both;
+  float: left;
+  margin-right: 10px;
+}
+
+.section_content {
+  clear: both;
+  float: left;
+}

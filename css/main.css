@@ -1,39 +1,31 @@
-.fa-code {
-  color: blue;
+/*
+  Reset
+*/
+
+* {
+  box-sizing: border-box;
 }
 
-.fa-handshake-o {
-  color: green;
-}
-
-.fa-music {
-  color: orange;
-}
-
-.fa-headphones {
-  color: red;
-}
+/*
+  Layout
+*/
 
 html {
+  margin: 20px;
   background-color: #330033;
   font-family: monospace;
-  margin: 20px;
 }
 
 body {
-  background-color: #fff;
-  border-radius: 25px;
-  color: #000;
+  display: flex;
+  flex-flow: column;
   margin: auto;
   margin-bottom: 20px;
   max-width: 1000px;
   padding: 20px;
-}
-
-a {
-  background-color: #F0F0FF;
-  text-decoration: underline;
-  color: black;
+  background-color: #fff;
+  border-radius: 25px;
+  color: #000;
 }
 
 h1,
@@ -50,35 +42,55 @@ h1 {
   font-size: 3em;
 }
 
+a {
+  background-color: #F0F0FF;
+  text-decoration: underline;
+  color: black;
+}
+
 .left {
   float: left;
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 
 .right {
   float: right;
-  margin-top: 5px; 
+  margin-top: 5px;
   text-align: right;
 }
 
-#header::after,
-#content .section::after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
 #header,
-#content .section {
+.section {
   border-bottom: 1px solid #444;
   margin-bottom: 0px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
-#header .fa {
-  margin-right: 5px;
+#header .right {
+  font-size: 110%;
+}
+
+.title {
+  background-color: #FFFFAA;
+  font-size: 110%;
+  font-weight: bold;
+  padding: 4px;
+  text-align: center;
+}
+
+.sub {
+  font-size: 100%;
+  font-style: italic;
+}
+
+.section_content {
+  clear: both;
+  float: left;
+}
+
+#content {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 #content .section:LAST-OF-TYPE {
@@ -87,13 +99,30 @@ h1 {
   padding-bottom: 0;
 }
 
-#header .left .fa {
-  text-align: center;
-  width: 40px;
+/*
+  Font-Awesome icons
+*/
+
+.fa-code {
+  color: blue;
 }
 
-#header .right {
-  font-size: 110%;
+.fa-handshake-o {
+  color: green;
+}
+
+.fa-music {
+  color: orange;
+}
+
+.fa-headphones {
+  color: red;
+}
+
+#header .fa {
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
 }
 
 #header .right .fa {
@@ -106,26 +135,4 @@ h1 {
   text-align: center;
   padding: 2px 0 2px 0;
   width: 30px;
-}
-
-.title {
-  background-color: #FFFFAA;
-  font-size: 110%;
-  font-weight: bold;
-}
-
-.sub {
-  font-size: 100%;
-  font-style: italic;
-}
-
-.section_title div {
-  clear: both;
-  float: left;
-  margin-right: 10px;
-}
-
-.section_content {
-  clear: both;
-  float: left;
 }

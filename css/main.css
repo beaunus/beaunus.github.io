@@ -59,15 +59,18 @@ a {
   text-align: right;
 }
 
-#header,
-.section {
-  border-bottom: 1px solid #444;
+header .right {
+  font-size: 110%;
+}
+
+header,
+section {
   margin-bottom: 0px;
   padding: 10px;
 }
 
-#header .right {
-  font-size: 110%;
+section {
+  border-top: 1px solid #444;
 }
 
 .title {
@@ -88,12 +91,12 @@ a {
   float: left;
 }
 
-#content {
+main {
   display: flex;
   flex-flow: column wrap;
 }
 
-#content .section:LAST-OF-TYPE {
+main section:LAST-OF-TYPE {
   border: 0;
   margin: 0;
   padding-bottom: 0;
@@ -119,13 +122,13 @@ a {
   color: red;
 }
 
-#header .fa {
+header .fa {
   margin-right: 5px;
   text-align: center;
   width: 40px;
 }
 
-#header .right .fa {
+header .right .fa {
   text-align: center;
   width: 50px;
 }

@@ -13,7 +13,7 @@
 html {
   margin: 20px;
   background-color: #330033;
-  font-family: monospace;
+  font-family: Nunito;
 }
 
 body {
@@ -43,7 +43,7 @@ h1 {
 }
 
 a {
-  background-color: #F0F0FF;
+  background-color: #f0f0ff;
   text-decoration: underline;
   color: black;
 }
@@ -74,7 +74,7 @@ section {
 }
 
 .title {
-  background-color: #FFFFAA;
+  background-color: #ffffaa;
   font-size: 110%;
   font-weight: bold;
   padding: 4px;
@@ -96,7 +96,7 @@ main {
   flex-flow: column wrap;
 }
 
-main section:LAST-OF-TYPE {
+main section:last-of-type {
   border: 0;
   margin: 0;
   padding-bottom: 0;

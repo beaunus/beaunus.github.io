@@ -1,3 +1,10 @@
+:root {
+  --color-dark: #5e239d;
+  --color-light: #0097a799;
+  --color-highlight: #d9ead3;
+  /* --color-highlight: #ec048b66; */
+}
+
 /*
   Reset
 */
@@ -12,7 +19,7 @@
 
 html {
   margin: 20px;
-  background-color: #330033;
+  background-color: black;
   font-family: Nunito;
 }
 
@@ -42,10 +49,20 @@ h1 {
   font-size: 3em;
 }
 
-a {
-  background-color: #f0f0ff;
-  text-decoration: underline;
+a,
+a:hover {
+  text-decoration: none;
   color: black;
+}
+
+a {
+  border-bottom: solid var(--color-highlight) 1px;
+  box-shadow: inset 0 -1px var(--color-highlight);
+  transition: background 0.25s ease-in-out;
+}
+
+a:hover {
+  background: var(--color-highlight);
 }
 
 .left {
@@ -63,22 +80,22 @@ header .right {
   font-size: 110%;
 }
 
-header,
-section {
-  margin-bottom: 0px;
-  padding: 10px;
+header {
+  margin-bottom: 0.5em;
 }
 
-section {
-  border-top: 1px solid #444;
+section:not(:first-child) {
+  margin-top: 0.5em;
 }
 
 .title {
-  background-color: #ffffaa;
+  background-color: var(--color-light);
+  border-radius: 0.5em;
   font-size: 110%;
   font-weight: bold;
   padding: 4px;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .sub {

@@ -79,12 +79,12 @@ h3 {
 }
 
 h4 {
-  color: var(--color-purple);
+  color: var(--color-blue);
   font-size: 1.777777777777778em;
 }
 
 h5 {
-  color: var(--color-blue);
+  color: var(--color-purple);
   font-size: 1.333333333333333em;
 }
 

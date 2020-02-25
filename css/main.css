@@ -3,6 +3,7 @@
   --color-blue: #007b89;
   --color-pink: #ec048c;
   --color-highlight: hsl(186, 50%, 80%);
+  --color-alternate-background: hsl(325, 5%, 95%);
 }
 
 * {
@@ -81,11 +82,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: #eee;
+  background-color: var(--color-alternate-background);
 }
 
 section:nth-child(odd):not(:last-of-type) {
-  background-color: #eee;
+  background-color: var(--color-alternate-background);
   margin: 10px 0 0;
   -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);

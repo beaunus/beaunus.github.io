@@ -122,8 +122,8 @@ section img {
 .logos > *,
 .logos > a > *,
 #logo {
-  height: 30px;
-  margin: 15px;
+  height: 25px;
+  margin: 10px;
 }
 
 .logos i {

@@ -112,19 +112,19 @@ section:nth-child(odd):not(:last-of-type) {
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
-a,
-a:hover {
+:not(.logos) > a,
+:not(.logos) > a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-a {
+:not(.logos) > a {
   border-bottom: solid var(--color-highlight) 1px;
   box-shadow: inset 0 -1px var(--color-highlight);
   transition: background 0.25s ease-in-out;
 }
 
-a:hover {
+:not(.logos) > a:hover {
   background: var(--color-highlight);
 }
 

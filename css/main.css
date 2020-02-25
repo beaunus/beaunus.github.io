@@ -5,17 +5,9 @@
   --color-highlight: hsl(186, 50%, 80%);
 }
 
-/*
-  Reset
-*/
-
 * {
   box-sizing: border-box;
 }
-
-/*
-  Layout
-*/
 
 html {
   font-family: Nunito;
@@ -30,30 +22,17 @@ body {
   text-align: center;
 }
 
-#profile-photo {
-  border-radius: 50%;
-  max-width: 66.6666666667%;
-  max-height: 200px;
-  box-shadow: 2px 2px 6px 2px lightgray;
-}
-
 header {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 2em;
 }
 
-.logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.logos > *,
-.logos > a > *,
-#logo {
-  height: 30px;
-  margin: 15px;
+#profile-photo {
+  border-radius: 50%;
+  max-width: 66.6666666667%;
+  max-height: 200px;
+  box-shadow: 2px 2px 6px 2px lightgray;
 }
 
 h1,
@@ -112,6 +91,11 @@ section:nth-child(odd):not(:last-of-type) {
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
+section img {
+  max-height: 400px;
+  max-width: 200px;
+}
+
 :not(.logos) > a,
 :not(.logos) > a:hover {
   text-decoration: none;
@@ -128,6 +112,19 @@ section:nth-child(odd):not(:last-of-type) {
   background: var(--color-highlight);
 }
 
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logos > *,
+.logos > a > *,
+#logo {
+  height: 30px;
+  margin: 15px;
+}
+
 .logos i {
   text-align: right;
 }
@@ -136,9 +133,8 @@ section:nth-child(odd):not(:last-of-type) {
   text-align: left;
 }
 
-section img {
-  max-height: 400px;
-  max-width: 200px;
+.rounded {
+  border-radius: 20px;
 }
 
 .fa-code {
@@ -162,8 +158,4 @@ section img {
   /* text-align: center; */
   margin-right: 10px;
   /* width: 30px; */
-}
-
-.rounded {
-  border-radius: 20px;
 }

@@ -150,11 +150,11 @@ section img {
   color: orange;
 }
 
-.fa-headphones {
+.fa-headphones-alt {
   color: red;
 }
 
-.fa {
+.fa, .far, .fas {
   margin-top: 3px;
   /* text-align: center; */
   margin-right: 10px;

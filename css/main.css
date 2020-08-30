@@ -154,9 +154,15 @@ section img {
   color: red;
 }
 
-.fa, .far, .fas {
+.fa,
+.far,
+.fas {
   margin-top: 3px;
   /* text-align: center; */
   margin-right: 10px;
   /* width: 30px; */
+}
+
+.rounded-border {
+  border-radius: 20px;
 }
